@@ -14,3 +14,24 @@ const healthTextElement = document.querySelector("#healthText");
 const goldTextElement = document.querySelector("#goldText");
 const monsterStatsElement = document.querySelector("#monsterStats");
 const monsterNameElement = document.querySelector("#monsterName");
+const monsterHealthText = document.querySelector("#monsterHealth");
+function goStore() {
+  button1.innerText = "Buy 10 health (10 gold)";
+  button1.onclick = buyHealth;
+
+  button2.innerText = "Buy weapon (30 gold)";
+  button2.onclick = buyWeapon;
+
+  button3.innerText = "Go to town square";
+  button3.onclick = goTown;
+}
+function goCave() {
+  console.log("Going to cave.");
+}
+function fightDragon() {
+  console.log("Fighting dragon.");
+}
+// initialize buttons
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
